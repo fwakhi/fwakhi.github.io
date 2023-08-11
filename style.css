@@ -23,6 +23,16 @@ html {
   text-align: justify;
 }
 
+button{
+  width: 70px;
+  height: fit-content;
+}
+button p{
+  font-size: 2em;
+  color: white;
+  vertical-align: middle;
+  margin: auto;
+}
 .complementary{
   font-family: Raleway;
   font-size: 2.5em;
