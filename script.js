@@ -8,6 +8,11 @@ const resume = {
         phone: '+34 689410197',
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'Sobre mí',
+        profExperience: 'Experiencia Laboral',
+        education: 'Formación',
+        languages: 'Idiomas',
+        other: 'Formación Complementaria & Voluntariado',
+
         education: [
             {
                 school: 'IES La Arboleda',
@@ -115,6 +120,11 @@ const resume = {
         phone: '+34 689410197',
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'About me',
+        profExperience: 'Professional Experience',
+        education: 'Education',
+        languages: 'Languages',
+        other: 'Additional Studies & Volunteering',
+
         education: [
             {
                 school: 'IES La Arboleda',
