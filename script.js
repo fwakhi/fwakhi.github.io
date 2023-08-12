@@ -1,132 +1,251 @@
-/**
- * Resume/CV template created with Bootstrap 5 by @vmoratog and @jdnichollsc
- */
 const resume = {
-  firstName: 'Fátima',
-  lastName: 'Lobo',
-  jobTitle: 'Front End Developer',
-  city: 'Madrid',
-  country: 'Spain',
-  phone: '+34 689410197',
-  email: 'fatima.lobo.arroyo@gmail.com',
-  education: [
-    {
-      school: 'IES La Arboleda',
-      degree: 'Grado Superior de Desarrollo de Aplicaciones Web',
-      graduationDate: '2021-2023'
-    },
-    {
-      school: 'Kanda University of Foreign Studies (Chiba, Japan)',
-      degree: 'Japanese Language and Culture Program',
-      graduationDate: '2018'
-    },
-    {
-      school: 'Universidad Autónoma de Madrid (UAM)',
-      degree: 'Grado en Estudios de Asia y África: Japonés',
-      graduationDate: '2015-2020'
-    }
-  ],
-  links: [
-    {
-      label: 'GitHub',
-      link: 'https://github.com/fwakhi'
-    },
-    {
-      label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/'
-    }
-  ],
-  skills: [
-    'JavaScript',
-    'React',
-    'CSS',
-    'HTML',
-    'Bootstrap',
-    'jQuery',
-    'Node.JS',
-    'Java',
-    'PHP',
-    'MySQL'
-  ],
-  languages: ['Español', 'Inglés', 'Japonés', 'Francés'],
-  professionalSummary: `Me gradué en Estudios Japoneses por la UAM por mi pasión por los idiomas, lo que me dio la oportunidad de pasar una temporada estudiando y viviendo en Japón. Tras eso, decidí meterme en el mundo de la programación y seguir mi carrera como desarrolladora front-end.
+    "es": {
+        firstName: 'Fátima',
+        lastName: 'Lobo',
+        jobTitle: 'Front End Developer',
+        city: 'Madrid',
+        country: 'España',
+        phone: '+34 689410197',
+        email: 'fatima.lobo.arroyo@gmail.com',
+        aboutMe: 'Sobre mí',
+        education: [
+            {
+                school: 'IES La Arboleda',
+                degree: 'Grado Superior de Desarrollo de Aplicaciones Web',
+                graduationDate: '2021-2023'
+            },
+            {
+                school: 'Kanda University of Foreign Studies (Chiba, Japan)',
+                degree: 'Japanese Language and Culture Program',
+                graduationDate: '2018'
+            },
+            {
+                school: 'Universidad Autónoma de Madrid (UAM)',
+                degree: 'Grado en Estudios de Asia y África: Japonés',
+                graduationDate: '2015-2020'
+            }
+        ],
+        links: [
+            {
+                label: 'GitHub',
+                link: 'https://github.com/fwakhi'
+            },
+            {
+                label: 'LinkedIn',
+                link: 'https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/'
+            }
+        ],
+        skills: [
+            'JavaScript',
+            'React',
+            'CSS',
+            'HTML',
+            'Bootstrap',
+            'jQuery',
+            'Node.JS',
+            'Java',
+            'PHP',
+            'MySQL'
+        ],
+        languages: ['Español', 'Inglés', 'Japonés', 'Francés'],
+        professionalSummary: `Me gradué en Estudios Japoneses por la UAM por mi pasión por los idiomas, lo que me dio la oportunidad de pasar una temporada estudiando y viviendo en Japón. Tras eso, decidí meterme en el mundo de la programación y seguir mi carrera como desarrolladora front-end.
   Mi gusto por los idiomas y la programación lo compagino con mi afición por el diseño, la fotografía, el patinaje y todo lo audiovisual.
   A pesar de mi breve experiencia profesional en el sector, haber estudiado en el extranjero y haberme formado como monitora me
   ha servido para aprender a trabajar en equipo, trabajar bajo presión y saber adaptarme a cualquier situación.`,
-  employmentHistory: [
-    {
-      jobTitle: 'Desarrolladora Web',
-      startDate: 'Mar 2023',
-      endDate: 'Jun 2023',
-      employer: 'Accenture',
-      city: 'Madrid',
-      achievements: [
-        'Contrato de prácticas',
-        'Adobe Experience Manager y Java'
-      ]
+        employmentHistory: [
+            {
+                jobTitle: 'Desarrolladora Web',
+                startDate: 'Mar 2023',
+                endDate: 'Jun 2023',
+                employer: 'Accenture',
+                city: 'Madrid',
+                achievements: [
+                    'Contrato de prácticas',
+                    'Adobe Experience Manager y Java'
+                ]
+            },
+            {
+                jobTitle: 'Dependienta',
+                startDate: 'Oct 2020',
+                endDate: 'Oct 2021',
+                employer: 'Unpacked Shop',
+                city: 'Madrid',
+                achievements: [
+                    'Tienda de alimentación a granel y productos zero waste',
+                    'Manejo de caja, gestión de pedidos online',
+                    'Asesoramiento, atención y orientación de clientes',
+                    'Control de stock y reposición de mercancía'
+                ]
+            },
+            {
+                jobTitle: 'Dependienta',
+                startDate: 'Sept 2019',
+                endDate: ' Mar 2020',
+                employer: 'Uniqlo',
+                city: 'Madrid',
+                achievements: [
+                    'Apertura de la primera tienda de Uniqlo en Madrid',
+                    'Manejo de caja',
+                    'Asesoramiento, atención y orientación de clientes',
+                    'Control de stock y reposición de mercancía'
+                ]
+            }
+        ],
+        complementary: [
+            {
+                title: 'Curso de Monitor de Ocio y Tiempo Libre en Cruz Roja',
+                date: '2015',
+            },
+            {
+                title: 'Curso de Primeros Auxilios en Cruz Roja',
+                date: '2015',
+            },
+            {
+                title: 'Voluntaria en el Centro de Día Infantil de Usera I (Cruz Roja)',
+                date: '2016-2018',
+            }
+        ]
     },
-    {
-      jobTitle: 'Dependienta',
-      startDate: 'Oct 2020',
-      endDate: 'Oct 2021',
-      employer: 'Unpacked Shop',
-      city: 'Madrid',
-      achievements: [
-        'Tienda de alimentación a granel y productos zero waste',
-        'Manejo de caja, gestión de pedidos online',
-        'Asesoramiento, atención y orientación de clientes',
-        'Control de stock y reposición de mercancía'
-      ]
-    },
-    {
-      jobTitle: 'Dependienta',
-      startDate: 'Sept 2019',
-      endDate: ' Mar 2020',
-      employer: 'Uniqlo',
-      city: 'Madrid',
-      achievements: [
-        'Apertura de la primera tienda de Uniqlo en Madrid',
-        'Manejo de caja',
-        'Asesoramiento, atención y orientación de clientes',
-        'Control de stock y reposición de mercancía'
-      ]
+    "en": {
+        firstName: 'Fátima',
+        lastName: 'Lobo',
+        jobTitle: 'Front End Developer',
+        city: 'Madrid',
+        country: 'Spain',
+        phone: '+34 689410197',
+        email: 'fatima.lobo.arroyo@gmail.com',
+        aboutMe: 'About me',
+        education: [
+            {
+                school: 'IES La Arboleda',
+                degree: 'Certificate of Higher Education in Web Application Development',
+                graduationDate: '2021-2023'
+            },
+            {
+                school: 'Kanda University of Foreign Studies (Chiba, Japan)',
+                degree: 'Japanese Language and Culture Program',
+                graduationDate: '2018'
+            },
+            {
+                school: 'Universidad Autonoma de Madrid (UAM)',
+                degree: "Bachelor's Degree in Asian and African Studies: Japanese itinerary",
+                graduationDate: '2015-2020'
+            }
+        ],
+        links: [
+            {
+                label: 'GitHub',
+                link: 'https://github.com/fwakhi'
+            },
+            {
+                label: 'LinkedIn',
+                link: 'https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/'
+            }
+        ],
+        skills: [
+            'JavaScript',
+            'React',
+            'CSS',
+            'HTML',
+            'Bootstrap',
+            'jQuery',
+            'Node.JS',
+            'Java',
+            'PHP',
+            'MySQL'
+        ],
+        languages: ['Spanish', 'English', 'Japanese', 'French'],
+        professionalSummary: `I graduated in Japanese Studies at UAM because of my passion for languages, which gave me the opportunity to spend some time studying and living in Japan. After that, I decided to get into programming and pursue my career as a front-end developer.
+    I combine my love for languages and programming with my love for design, photography, skating and everything related to audiovisuals.
+        Despite my short professional experience in the sector, having studied abroad and having trained as a leisure instructor has helped me to learn how to work as a team. I have learned to work in a team, work under pressure and know how to adapt to any situation.`,
+        employmentHistory: [
+            {
+                jobTitle: 'Web Developer',
+                startDate: 'Mar 2023',
+                endDate: 'Jun 2023',
+                employer: 'Accenture',
+                city: 'Madrid',
+                achievements: [
+                    'Internship Contract',
+                    'Adobe Experience Manager & Java'
+                ]
+            },
+            {
+                jobTitle: 'Shop Assistant',
+                startDate: 'Oct 2020',
+                endDate: 'Oct 2021',
+                employer: 'Unpacked Shop',
+                city: 'Madrid',
+                achievements: [
+                    'Bulk food shop and zero waste products',
+                    'Cash handling, online order management',
+                    'Customer advice, customer service and guidance',
+                    'Stock control and inventory replenishment'
+                ]
+            },
+            {
+                jobTitle: 'Shop Assistant',
+                startDate: 'Sept 2019',
+                endDate: ' Mar 2020',
+                employer: 'Uniqlo',
+                city: 'Madrid',
+                achievements: [
+                    'Opening of the first Uniqlo shop in Madrid',
+                    'Cash handling',
+                    'Customer advice, customer service and guidance',
+                    'Stock control and inventory replenishment '
+                ]
+            }
+        ],
+        complementary: [
+            {
+                title: 'Leisure and free time monitor Course in Red Cross',
+                date: '2015',
+            },
+            {
+                title: 'First Aid Course in Red Cross',
+                date: '2015',
+            },
+            {
+                title: 'Volunteer - School support at Usera I Children Day Care Center (Red Cross)',
+                date: '2016-2018',
+            }
+        ]
     }
-  ],
-  complementary: [
-    {
-      title: 'Curso de Monitor de Ocio y Tiempo Libre en Cruz Roja',
-      date: '2015',
-    },
-    {
-      title: 'Curso de Primeros Auxilios en Cruz Roja',
-      date: '2015',
-    },
-    {
-      title: 'Voluntaria en el Centro de Día Infantil de Usera I (Cruz Roja)',
-      date: '2016-2018',
-    }
-  ]
 }
 
 const formatResume = (r) => ({
-  ...r,
-  address: [
-    r.city,
-    r.country
-  ].filter(Boolean).join(', ')
+    ...r,
+    address: [
+        r.city,
+        r.country
+    ].filter(Boolean).join(', ')
 })
 
+const getCookie = (name) => {
+    const defaultLang = "es"
+    let value = `; ${document.cookie}`;
+    let parts = value.split(`; ${name}=`);
+    return parts && parts.length === 2 ? parts.pop().split(';').shift() : defaultLang
+}
+
+const LANG = getCookie('lang')
+
 new Vue({
-  el: "#app",
-  data: formatResume(resume)
+    el: "#app",
+    data: formatResume(resume[LANG])
 });
+
 
 /**
  * Wait for animatable-component to be loaded (Only for VanillaJS)
  **/
 function animatableLoaded() {
-  document.querySelector('body').classList.remove('d-none');
+    document.querySelector('body').classList.remove('d-none');
 }
+
 if (customElements) {
-  customElements.whenDefined('animatable-component').then(animatableLoaded);
-} else animatableLoaded()
+    customElements.whenDefined('animatable-component').then(animatableLoaded);
+} else {
+    animatableLoaded()
+}
