@@ -9,8 +9,8 @@ const resume = {
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'Sobre mí',
         profExperience: 'Experiencia Laboral',
-        education: 'Formación',
-        languages: 'Idiomas',
+        educationTitle: 'Formación',
+        languagesTitle: 'Idiomas',
         other: 'Formación Complementaria & Voluntariado',
 
         education: [
@@ -52,7 +52,24 @@ const resume = {
             'PHP',
             'MySQL'
         ],
-        languages: ['Español', 'Inglés', 'Japonés', 'Francés'],
+        languages: [
+            {
+                lang: 'Español',
+                level: 'nativo'
+            },
+            {
+                lang: 'Inglés',
+                level: 'competencia profesional'
+            },
+            {
+                lang: 'Japonés',
+                level: 'intermedio'
+            },
+            {
+                lang: 'Francés',
+                level: 'básico'
+            }
+            ],
         professionalSummary: `Me gradué en Estudios Japoneses por la UAM por mi pasión por los idiomas, lo que me dio la oportunidad de pasar una temporada estudiando y viviendo en Japón. Tras eso, decidí meterme en el mundo de la programación y seguir mi carrera como desarrolladora front-end.
   Mi gusto por los idiomas y la programación lo compagino con mi afición por el diseño, la fotografía, el patinaje y todo lo audiovisual.
   A pesar de mi breve experiencia profesional en el sector, haber estudiado en el extranjero y haberme formado como monitora me
@@ -121,8 +138,8 @@ const resume = {
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'About me',
         profExperience: 'Professional Experience',
-        education: 'Education',
-        languages: 'Languages',
+        educationTitle: 'Education',
+        languagesTitle: 'Languages',
         other: 'Additional Studies & Volunteering',
 
         education: [
@@ -164,7 +181,24 @@ const resume = {
             'PHP',
             'MySQL'
         ],
-        languages: ['Spanish', 'English', 'Japanese', 'French'],
+        languages: [
+            {
+                lang: 'Spanish',
+                level: 'native'
+            },
+            {
+                lang: 'English',
+                level: 'professional competence'
+            },
+            {
+                lang: 'Japanese',
+                level: 'intermediate'
+            },
+            {
+                lang: 'French',
+                level: 'basic'
+            }
+            ],
         professionalSummary: `I graduated in Japanese Studies at UAM because of my passion for languages, which gave me the opportunity to spend some time studying and living in Japan. After that, I decided to get into programming and pursue my career as a front-end developer.
     I combine my love for languages and programming with my love for design, photography, skating and everything related to audiovisuals.
         Despite my short professional experience in the sector, having studied abroad and having trained as a leisure instructor has helped me to learn how to work as a team. I have learned to work in a team, work under pressure and know how to adapt to any situation.`,

@@ -262,7 +262,7 @@ span {
   color: #666766;
   font-size: 2.28048rem;
   line-height: 1.2;
-  letter-spacing: 0.5rem;
+  /* letter-spacing: 0.5rem; */
 }
 
 
@@ -301,11 +301,27 @@ span {
   }
 
   .header {
-    padding-top: 12rem;
-    padding-bottom: 9rem;
+    font-size: 10%;
+    padding-top: 25px;
+    margin-bottom: 0;
   }
+
+  .firstName, .lastName{
+    font-size: 20px;
+  }
+
+  .level-lang{
+    letter-spacing: 15px;
+    color: red;
+  }
+  
 
   ul li {
     margin-left: 1rem;
+  }
+  
+  button{
+    display: none;
+    visibility: hidden  ;
   }
 }
