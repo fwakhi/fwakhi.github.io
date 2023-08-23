@@ -37,7 +37,7 @@ const resume = {
             },
             {
                 label: 'LinkedIn',
-                link: 'https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/'
+                link: 'https://www.linkedin.com/in/fatima-lobo'
             }
         ],
         skills: [
@@ -59,15 +59,15 @@ const resume = {
             },
             {
                 lang: 'Inglés',
-                level: 'competencia profesional'
+                level: 'C1'
             },
             {
                 lang: 'Japonés',
-                level: 'intermedio'
+                level: 'B2'
             },
             {
                 lang: 'Francés',
-                level: 'básico'
+                level: 'B2'
             }
             ],
         professionalSummary: `Me gradué en Estudios Japoneses por la UAM por mi pasión por los idiomas, lo que me dio la oportunidad de pasar una temporada estudiando y viviendo en Japón. Tras eso, decidí meterme en el mundo de la programación y seguir mi carrera como desarrolladora front-end.
@@ -166,7 +166,7 @@ const resume = {
             },
             {
                 label: 'LinkedIn',
-                link: 'https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/'
+                link: 'https://www.linkedin.com/in/fatima-lobo'
             }
         ],
         skills: [
@@ -188,15 +188,15 @@ const resume = {
             },
             {
                 lang: 'English',
-                level: 'professional competence'
+                level: 'C1'
             },
             {
                 lang: 'Japanese',
-                level: 'intermediate'
+                level: 'B2'
             },
             {
                 lang: 'French',
-                level: 'basic'
+                level: 'B2'
             }
             ],
         professionalSummary: `I graduated in Japanese Studies at UAM because of my passion for languages, which gave me the opportunity to spend some time studying and living in Japan. After that, I decided to get into programming and pursue my career as a front-end developer.
