@@ -9,6 +9,7 @@ const resume = {
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'Sobre mí',
         profExperience: 'Experiencia Laboral',
+        projectsTitle: 'Proyectos',
         educationTitle: 'Formación',
         languagesTitle: 'Idiomas',
         other: 'Formación Complementaria & Voluntariado',
@@ -126,6 +127,15 @@ const resume = {
                 title: 'Voluntaria en el Centro de Día Infantil de Usera I (Cruz Roja)',
                 date: '2016-2018',
             }
+        ],
+        projects: [
+            {
+                title: 'ReelKeeper',
+                date: '2023',
+                link: 'https://github.com/fwakhi/ReelKeeper',
+                description: 'Web para cinéfilos/as que buscan un sitio donde marcar las películas que han visto y añadirlas a Favs, Watchlist o Watched. Permite crear listas personalizadas por el propio usuario, navegar entre los próximos estrenos, lo último en la cartelera y lo más popular, así como ofrecer información de cada película y sugerencias de pelis similares. Ofrece un diseño juvenil y minimalista, intuitivo y agradable.',
+                technologies: [ 'Javascript', 'React', 'CSS', 'HTML', 'mySQL', 'Node.js', 'Express', 'Sequelize', 'Axios']
+            }
         ]
     },
     "en": {
@@ -138,6 +148,7 @@ const resume = {
         email: 'fatima.lobo.arroyo@gmail.com',
         aboutMe: 'About me',
         profExperience: 'Professional Experience',
+        projectsTitle: 'Projects',
         educationTitle: 'Education',
         languagesTitle: 'Languages',
         other: 'Additional Studies & Volunteering',
@@ -253,6 +264,15 @@ const resume = {
             {
                 title: 'Volunteer - School support at Usera I Children Day Care Center (Red Cross)',
                 date: '2016-2018',
+            }
+        ],
+        projects: [
+            {
+                title: 'ReelKeeper',
+                date: '2023',
+                link: 'github.com/fwakhi/ReelKeeper',
+                description: 'Website for film enthusiasts looking for a place to bookmark the films they have watched and add them to their Favs, Watchlist or Watched list. It allows users to create personalised movie lists, browse through upcoming releases, the latest and most popular films, as well as offering information about each film and suggestions of similar ones. It offers a youthful and minimalist design, intuitive and pleasant to use.',
+                technologies: [ 'Javascript', 'React', 'CSS', 'HTML', 'mySQL', 'Node.js', 'Express', 'Sequelize', 'Axios']
             }
         ]
     }

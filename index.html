@@ -45,10 +45,13 @@
             </p>
           </animatable-component>
         </div>
-        <div class="col-2">
-          <button id="btn-lang" class="btn btn-dark btn-lg" onclick="changeLang()">
+        <div class="col-2 d-flex flex-column align-items-end">
+          <button id="btn-lang" class="btn btn-dark btn-lg rounded buttonStyle" onclick="changeLang()">
             <p id="btn-lang-text">EN</p>
           </button>
+          <a  class="btn btn-dark btn-lg rounded text-decoration-none buttonStyle"   href="./FatimaLoboCvEN.pdf" download>
+            <p id="btn-lang-text" style="color: rgb(255, 255, 255);">PDF</p>
+          </a>
         </div>
         <!-- <div v-if="!!photo" class="col-auto d-none d-lg-block d-print-block">
             <animatable-component autoplay animation="rotateIn" easing="ease-in" duration="1200">
@@ -112,11 +115,11 @@
               </animatable-component>
             </div>
             <div class="col">
-              <p>
-                <a class="text-reset text-decoration-none" target="_blank" href="https://github.com/fwakhi">
-                  GitHub
-                </a>
-              </p>
+
+              <a class="text-reset text-decoration-none" target="_blank" href="https://github.com/fwakhi">
+                <p>GitHub</p>
+              </a>
+
             </div>
           </div>
           <div class="row list-item me-5">
@@ -128,12 +131,33 @@
               </animatable-component>
             </div>
             <div class="col">
-              <p>
-                <a class="text-reset text-decoration-none" target="_blank"
-                  href="https://www.linkedin.com/in/f%C3%A1tima-lobo-arroyo-b51494233/">
-                  LinkedIn
-                </a>
-              </p>
+
+              <a class="text-reset text-decoration-none" target="_blank" href="https://www.linkedin.com/in/fatima-lobo">
+                <p>LinkedIn</p>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="row mt-5 me-5">
+            <div class="col p-0">
+              <p class="title">Skills</p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <ul class="ms-2 list-unstyled">
+                <li class="pb-2" v-for="(skill, index) in skills" :key="index" v-if="index < skills.length / 2">
+                  • {{ skill }}
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="ms-2 list-unstyled">
+                <li class="pb-2" v-for="(skill, index) in skills" :key="index" v-if="index >= skills.length / 2">
+                  • {{ skill }}
+                </li>
+              </ul>
             </div>
           </div>
           <div class="row mt-5 me-5">
@@ -150,27 +174,6 @@
               </ul>
             </div>
           </div>
-          <div class="row mt-5 me-5">
-            <div class="col p-0">
-              <p class="title">Skills</p>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-md-6">
-              <ul class="ms-2 list-unstyled">
-                  <li class="pb-2" v-for="(skill, index) in skills" :key="index" v-if="index < skills.length / 2">
-                      • {{ skill }}
-                  </li>
-              </ul>
-          </div>
-          <div class="col-md-6">
-              <ul class="ms-2 list-unstyled">
-                  <li class="pb-2" v-for="(skill, index) in skills" :key="index" v-if="index >= skills.length / 2">
-                      • {{ skill }}
-                  </li>
-              </ul>
-          </div>
-          </div>
 
           <div class="row mt-5 me-5 pb-4">
             <div class="col p-0 mt-5">
@@ -181,8 +184,8 @@
             <div class="col">
               <ul class="ms-2 list-unstyled">
                 <li class="pb-2 complementary" v-for="comp in complementary">
-                  • {{ comp.title }}
-                  <span>&nbsp;|&nbsp;{{ comp.date }} </span>
+                  • <span> {{ comp.date }} </span>
+                  &nbsp;|&nbsp;{{ comp.title }}
                   </p>
                 </li>
               </ul>
@@ -227,10 +230,11 @@
             </div>
             <div class="col">
               <p class="fw-bold text-uppercase">
-                {{ e.degree }}
+                {{ e.degree }} <span>&nbsp;|&nbsp;{{ e.graduationDate }} </span>
               </p>
-              <p class="raleway-font">
-                {{ e.school }}, {{ e.graduationDate }}
+              <p class="raleway-font ms-5">
+                {{ e.school }}
+
               </p>
               <p>{{ e.description }}</p>
             </div>
@@ -253,11 +257,40 @@
                 {{ employment.jobTitle }}
                 <span>&nbsp;|&nbsp;{{ employment.startDate }} - {{ employment.endDate }}</span>
               </p>
-              <p class="fst-italic fw-bold">
+              <p class="fst-italic fw-bold ms-5">
                 {{ employment.employer }}
               </p>
-              <p class="mb-0 raleway-font" v-for="achievement in employment.achievements">
+              <p class="mb-0 raleway-font ms-5" v-for="achievement in employment.achievements">
                 • {{ achievement }}
+              </p>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-auto bullet pt-2">
+              <i class="bi bi-circle-fill"></i>
+            </div>
+            <div class="col">
+              <p class="title">{{ projectsTitle }}</p>
+            </div>
+          </div>
+          <div class="row record mb-4 bullet" v-for="proj in projects">
+            <div class="col-auto">
+              <i class="bi bi-record-circle"></i>
+            </div>
+            <div class="col">
+              <p class="text-uppercase fw-bold position-relative">
+                {{ proj.title }} <span>({{ proj.date }}) </span><span><a class="fst-italic fw-bold ms-5" :href="proj.link" target="_blank">
+                    <i class="bi bi-github" style="font-size: 3.5rem; color: rgb(29, 29, 29);" role="img" aria-label="Github"></i>
+                  </a></span>
+              </p>
+              <p class="ms-5 raleway-font little">
+                {{ proj.description }}
+              </p>
+              <p class="mb-0 raleway-font ms-5 ">
+                <span class="techTag" v-for="tech in proj.technologies">
+                  {{ tech }}
+                </span>
               </p>
             </div>
           </div>
@@ -266,8 +299,8 @@
     </section>
   </section>
   <div class="btn-group-fab d-print-none">
-    <div>
-      <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary" title="Print">
+    <div class="align-btn">
+      <button onclick="javascript:window.print()" type="button" class="btn btn-main btn-primary ms-auto" title="Print">
         <i class="bi bi-printer fs-3"></i>
       </button>
     </div>
