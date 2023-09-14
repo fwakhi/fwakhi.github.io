@@ -49,7 +49,8 @@
           <button id="btn-lang" class="btn btn-dark btn-lg rounded buttonStyle" onclick="changeLang()">
             <p id="btn-lang-text">EN</p>
           </button>
-          <a  class="btn btn-dark btn-lg rounded text-decoration-none buttonStyle"   href="./FatimaLoboCvEN.pdf" download>
+          <a class="btn btn-dark btn-lg rounded text-decoration-none buttonStyle printToDelete"
+            href="./FatimaLoboCvEN.pdf" download>
             <p id="btn-lang-text" style="color: rgb(255, 255, 255);">PDF</p>
           </a>
         </div>
@@ -197,26 +198,42 @@
 
         <div class="col col-8 margin-start">
           <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
-            <div class="row bullet">
-              <div class="col-auto pt-2">
+            <div class="row mt-5">
+              <div class="col-auto bullet pt-2">
                 <i class="bi bi-circle-fill"></i>
               </div>
               <div class="col">
-                <p class="title">{{ aboutMe }}</p>
+                <p class="title">{{ projectsTitle }}</p>
               </div>
             </div>
           </animatable-component>
-          <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
-            <div class="row record bullet">
+
+          <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="800">
+            <div class="row record mb-5 bullet" v-for="proj in projects">
               <div class="col-auto">
                 <i class="bi bi-record-circle"></i>
               </div>
               <div class="col">
-                <p style="white-space: pre-line;" class="little ">{{ professionalSummary }}</p>
+                <p class="text-uppercase fw-bold position-relative">
+                  {{ proj.title }} <span>({{ proj.date }}) </span><span><a class="fst-italic fw-bold ms-5"
+                      :href="proj.link" target="_blank">
+                      <i class="bi bi-github" style="font-size: 3.5rem; color: rgb(29, 29, 29);" role="img"
+                        aria-label="Github"></i>
+                    </a></span>
+                </p>
+                <p class="ms-5 raleway-font little">
+                  {{ proj.description }}
+                </p>
+                <p class="mb-0 raleway-font ms-5 ">
+                  <span class="techTag" v-for="tech in proj.technologies">
+                    {{ tech }}
+                  </span>
+                </p>
               </div>
             </div>
           </animatable-component>
-          <div class="row mt-5">
+
+          <div class="row mt-5 spaceBetween">
             <div class="col-auto bullet pt-2">
               <i class="bi bi-circle-fill"></i>
             </div>
@@ -240,7 +257,7 @@
             </div>
           </div>
 
-          <div class="row mt-5">
+          <div class="row mt-5 spaceBetween">
             <div class="col-auto bullet pt-2">
               <i class="bi bi-circle-fill"></i>
             </div>
@@ -266,34 +283,25 @@
             </div>
           </div>
 
-          <div class="row mt-5">
-            <div class="col-auto bullet pt-2">
+          <div class="row bullet mt-5 printToDelete spaceBetween">
+            <div class="col-auto pt-2">
               <i class="bi bi-circle-fill"></i>
             </div>
             <div class="col">
-              <p class="title">{{ projectsTitle }}</p>
+              <p class="title">{{ aboutMe }}</p>
             </div>
           </div>
-          <div class="row record mb-4 bullet" v-for="proj in projects">
+
+          <div class="row record bullet printToDelete">
             <div class="col-auto">
               <i class="bi bi-record-circle"></i>
             </div>
             <div class="col">
-              <p class="text-uppercase fw-bold position-relative">
-                {{ proj.title }} <span>({{ proj.date }}) </span><span><a class="fst-italic fw-bold ms-5" :href="proj.link" target="_blank">
-                    <i class="bi bi-github" style="font-size: 3.5rem; color: rgb(29, 29, 29);" role="img" aria-label="Github"></i>
-                  </a></span>
-              </p>
-              <p class="ms-5 raleway-font little">
-                {{ proj.description }}
-              </p>
-              <p class="mb-0 raleway-font ms-5 ">
-                <span class="techTag" v-for="tech in proj.technologies">
-                  {{ tech }}
-                </span>
-              </p>
+              <p style="white-space: pre-line;" class="raleway-font little">{{ professionalSummary }}</p>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>

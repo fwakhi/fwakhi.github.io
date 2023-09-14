@@ -17,7 +17,9 @@ html {
   font-size: 38%;
 }
 
-
+.spaceBetween{
+  padding-top: 30px;
+}
 .little{
   font-size: 20%;
   text-align: justify;
@@ -334,17 +336,11 @@ span {
     font-size: 20px;
   }
 
-  /* .level-lang{
-    letter-spacing: 15px;
-    color: red;
-  } */
-  
-
   ul li {
     margin-left: 1rem;
   }
   
-  button{
+  button, .printToDelete{
     display: none;
     visibility: hidden  ;
   }

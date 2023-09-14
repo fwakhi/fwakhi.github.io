@@ -72,9 +72,7 @@ const resume = {
             }
             ],
         professionalSummary: `Me gradué en Estudios Japoneses por la UAM por mi pasión por los idiomas, lo que me dio la oportunidad de pasar una temporada estudiando y viviendo en Japón. Tras eso, decidí meterme en el mundo de la programación y seguir mi carrera como desarrolladora front-end.
-  Mi gusto por los idiomas y la programación lo compagino con mi afición por el diseño, la fotografía, el patinaje y todo lo audiovisual.
-  A pesar de mi breve experiencia profesional en el sector, haber estudiado en el extranjero y haberme formado como monitora me
-  ha servido para aprender a trabajar en equipo, trabajar bajo presión y saber adaptarme a cualquier situación.`,
+  Mi gusto por los idiomas y la programación lo compagino con mi afición por el diseño, la fotografía, el patinaje y todo lo audiovisual. A pesar de mi breve experiencia profesional en el sector, haber estudiado en el extranjero y haberme formado como monitora me ha servido para aprender a trabajar en equipo, trabajar bajo presión y saber adaptarme a cualquier situación.`,
         employmentHistory: [
             {
                 jobTitle: 'Desarrolladora Web',
