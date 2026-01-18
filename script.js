@@ -2,7 +2,7 @@ const resume = {
     "es": {
         firstName: 'Fátima',
         lastName: 'Lobo',
-        jobTitle: 'Front End Developer',
+        jobTitle: 'Mobile & Frontend Developer',
         city: 'Madrid',
         country: 'España',
         phone: '+34 689410197',
@@ -43,15 +43,14 @@ const resume = {
         ],
         skills: [
             'Flutter',
+            'Dart',
             'JavaScript',
             'React',
             'CSS',
             'HTML',
             'Bootstrap',
-            'jQuery',
             'Node.JS',
             'Java',
-            'PHP',
             'MySQL'
         ],
         languages: [
@@ -76,6 +75,21 @@ const resume = {
   Mi gusto por los idiomas y la programación lo compagino con mi afición por el diseño, la fotografía, el patinaje y todo lo audiovisual. A pesar de mi breve experiencia profesional en el sector, haber estudiado en el extranjero y haberme formado como monitora me ha servido para aprender a trabajar en equipo, trabajar bajo presión y saber adaptarme a cualquier situación.`,
         employmentHistory: [
             {
+                jobTitle: 'Desarrolladora Móvil',
+                startDate: 'Oct 2023',
+                endDate: 'Actualidad',
+                employer: 'AIM Sport',
+                city: 'Madrid',
+                achievements: [
+                    'Desarrollo y mantenimiento de aplicaciones móviles con Flutter (iOS y Android).',
+                    'Diseño e implementación de componentes de UI optimizados, con especial atención al rendimiento, las animaciones y la UX.'
+                    'Integración de APIs REST y gestión de autenticación a través de refresh tokens.',
+                    'Implementación de funcionalidades de gestión de archivos y multimedia (subida, previsualización, descarga de imágenes y vídeos)',
+                    'Manejo de tareas en segundo plano y notificaciones in-app y push, mediante OneSignal.',
+                    'Publicación y gestión de releases en App Store (TestFlight) y Google Play.',
+                ]
+            },
+            {
                 jobTitle: 'Desarrolladora Web',
                 startDate: 'Mar 2023',
                 endDate: 'Jun 2023',
@@ -86,32 +100,8 @@ const resume = {
                     'Adobe Experience Manager y Java'
                 ]
             },
-            {
-                jobTitle: 'Dependienta',
-                startDate: 'Oct 2020',
-                endDate: 'Oct 2021',
-                employer: 'Unpacked Shop',
-                city: 'Madrid',
-                achievements: [
-                    'Tienda de alimentación a granel y productos zero waste',
-                    'Manejo de caja, gestión de pedidos online',
-                    'Asesoramiento, atención y orientación de clientes',
-                    'Control de stock y reposición de mercancía'
-                ]
-            },
-            {
-                jobTitle: 'Dependienta',
-                startDate: 'Sept 2019',
-                endDate: ' Mar 2020',
-                employer: 'Uniqlo',
-                city: 'Madrid',
-                achievements: [
-                    'Apertura de la primera tienda de Uniqlo en Madrid',
-                    'Manejo de caja',
-                    'Asesoramiento, atención y orientación de clientes',
-                    'Control de stock y reposición de mercancía'
-                ]
-            }
+        
+            
         ],
         complementary: [
             {
@@ -140,7 +130,7 @@ const resume = {
     "en": {
         firstName: 'Fátima',
         lastName: 'Lobo',
-        jobTitle: 'Front End Developer',
+        jobTitle: 'Mobile & Frontend Developer',
         city: 'Madrid',
         country: 'Spain',
         phone: '+34 689410197',
@@ -180,15 +170,15 @@ const resume = {
             }
         ],
         skills: [
+            'Flutter',
+            'Dart',
             'JavaScript',
             'React',
             'CSS',
             'HTML',
             'Bootstrap',
-            'jQuery',
             'Node.JS',
             'Java',
-            'PHP',
             'MySQL'
         ],
         languages: [
@@ -214,6 +204,21 @@ const resume = {
         Despite my short professional experience in the sector, having studied abroad and having trained as a leisure instructor has helped me to learn how to work as a team. I have learned to work in a team, work under pressure and know how to adapt to any situation.`,
         employmentHistory: [
             {
+                jobTitle: 'Mobile Developer',
+                startDate: 'Oct 2023',
+                endDate: 'Current',
+                employer: 'AIM Sport',
+                city: 'Madrid',
+                achievements: [
+                    'Development and maintenance of mobile applications using Flutter (iOS and Android).',
+                    'Implementation of optimized UI components, with a strong focus on performance, animations, and UX',
+                    'Integration of REST APIs and authentication management using refresh tokens',
+                    'Implementation of file and multimedia management features (uploading, previewing, and downloading images and videos).',
+                    'Handling of background tasks and in-app and push notifications using OneSignal.',
+                    'Release management and publication on the App Store (Testflight) and Google Play'
+                ]
+            },
+            {
                 jobTitle: 'Web Developer',
                 startDate: 'Mar 2023',
                 endDate: 'Jun 2023',
@@ -224,32 +229,7 @@ const resume = {
                     'Adobe Experience Manager & Java'
                 ]
             },
-            {
-                jobTitle: 'Shop Assistant',
-                startDate: 'Oct 2020',
-                endDate: 'Oct 2021',
-                employer: 'Unpacked Shop',
-                city: 'Madrid',
-                achievements: [
-                    'Bulk food shop and zero waste products',
-                    'Cash handling, online order management',
-                    'Customer advice, customer service and guidance',
-                    'Stock control and inventory replenishment'
-                ]
-            },
-            {
-                jobTitle: 'Shop Assistant',
-                startDate: 'Sept 2019',
-                endDate: ' Mar 2020',
-                employer: 'Uniqlo',
-                city: 'Madrid',
-                achievements: [
-                    'Opening of the first Uniqlo shop in Madrid',
-                    'Cash handling',
-                    'Customer advice, customer service and guidance',
-                    'Stock control and inventory replenishment '
-                ]
-            }
+            
         ],
         complementary: [
             {
