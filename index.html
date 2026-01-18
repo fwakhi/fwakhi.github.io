@@ -197,7 +197,61 @@
 
 
         <div class="col col-8 margin-start">
-          <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
+
+           <div class="row mt-5 spaceBetween">
+            <div class="col-auto bullet pt-2">
+              <i class="bi bi-circle-fill"></i>
+            </div>
+            <div class="col">
+              <p class="title">{{profExperience}}</p>
+            </div>
+          </div>
+          <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
+            <div class="col-auto">
+              <i class="bi bi-record-circle"></i>
+            </div>
+            <div class="col">
+              <p class="text-uppercase fw-bold position-relative">
+                {{ employment.jobTitle }}
+                <span>&nbsp;|&nbsp;{{ employment.startDate }} - {{ employment.endDate }}</span>
+              </p>
+              <p class="fst-italic fw-bold ms-5">
+                {{ employment.employer }}
+              </p>
+              <p class="mb-0 raleway-font ms-5" v-for="achievement in employment.achievements">
+                • {{ achievement }}
+              </p>
+            </div>
+          </div>
+          
+         
+
+          <div class="row mt-5 spaceBetween">
+            <div class="col-auto bullet pt-2">
+              <i class="bi bi-circle-fill"></i>
+            </div>
+            <div class="col">
+              <p class="title">{{ educationTitle }}</p>
+            </div>
+          </div>
+          <div class="row record" v-for="e in education">
+            <div class="col-auto bullet">
+              <i class="bi bi-record-circle"></i>
+            </div>
+            <div class="col">
+              <p class="fw-bold text-uppercase">
+                {{ e.degree }} <span>&nbsp;|&nbsp;{{ e.graduationDate }} </span>
+              </p>
+              <p class="raleway-font ms-5">
+                {{ e.school }}
+
+              </p>
+              <p>{{ e.description }}</p>
+            </div>
+          </div>
+
+
+           <animatable-component autoplay animation="fade-in-right" easing="ease-in-out" duration="1200">
             <div class="row mt-5">
               <div class="col-auto bullet pt-2">
                 <i class="bi bi-circle-fill"></i>
@@ -232,56 +286,7 @@
               </div>
             </div>
           </animatable-component>
-
-          <div class="row mt-5 spaceBetween">
-            <div class="col-auto bullet pt-2">
-              <i class="bi bi-circle-fill"></i>
-            </div>
-            <div class="col">
-              <p class="title">{{ educationTitle }}</p>
-            </div>
-          </div>
-          <div class="row record" v-for="e in education">
-            <div class="col-auto bullet">
-              <i class="bi bi-record-circle"></i>
-            </div>
-            <div class="col">
-              <p class="fw-bold text-uppercase">
-                {{ e.degree }} <span>&nbsp;|&nbsp;{{ e.graduationDate }} </span>
-              </p>
-              <p class="raleway-font ms-5">
-                {{ e.school }}
-
-              </p>
-              <p>{{ e.description }}</p>
-            </div>
-          </div>
-
-          <div class="row mt-5 spaceBetween">
-            <div class="col-auto bullet pt-2">
-              <i class="bi bi-circle-fill"></i>
-            </div>
-            <div class="col">
-              <p class="title">{{profExperience}}</p>
-            </div>
-          </div>
-          <div class="row record mb-4 bullet" v-for="employment in employmentHistory">
-            <div class="col-auto">
-              <i class="bi bi-record-circle"></i>
-            </div>
-            <div class="col">
-              <p class="text-uppercase fw-bold position-relative">
-                {{ employment.jobTitle }}
-                <span>&nbsp;|&nbsp;{{ employment.startDate }} - {{ employment.endDate }}</span>
-              </p>
-              <p class="fst-italic fw-bold ms-5">
-                {{ employment.employer }}
-              </p>
-              <p class="mb-0 raleway-font ms-5" v-for="achievement in employment.achievements">
-                • {{ achievement }}
-              </p>
-            </div>
-          </div>
+         
 
           <div class="row bullet mt-5 printToDelete spaceBetween">
             <div class="col-auto pt-2">
