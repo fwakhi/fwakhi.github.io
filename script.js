@@ -78,7 +78,7 @@ const resume = {
                 jobTitle: 'Desarrolladora Móvil',
                 startDate: 'Oct 2023',
                 endDate: 'Actualidad',
-                employer: 'AIM Sport',
+                employer: 'AIM Sport | Adrenaline',
                 city: 'Madrid',
                 achievements: [
                     'Desarrollo y mantenimiento de aplicaciones móviles con Flutter (iOS y Android).',
@@ -207,7 +207,7 @@ const resume = {
                 jobTitle: 'Mobile Developer',
                 startDate: 'Oct 2023',
                 endDate: 'Current',
-                employer: 'AIM Sport',
+                employer: 'AIM Sport | Adrenaline',
                 city: 'Madrid',
                 achievements: [
                     'Development and maintenance of mobile applications using Flutter (iOS and Android).',
