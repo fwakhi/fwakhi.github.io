@@ -42,6 +42,7 @@ const resume = {
             }
         ],
         skills: [
+            'Flutter',
             'JavaScript',
             'React',
             'CSS',
