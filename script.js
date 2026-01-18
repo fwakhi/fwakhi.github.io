@@ -82,7 +82,7 @@ const resume = {
                 city: 'Madrid',
                 achievements: [
                     'Desarrollo y mantenimiento de aplicaciones móviles con Flutter (iOS y Android).',
-                    'Diseño e implementación de componentes de UI optimizados, con especial atención al rendimiento, las animaciones y la UX.'
+                    'Diseño e implementación de componentes de UI optimizados, con especial atención al rendimiento, las animaciones y la UX.',
                     'Integración de APIs REST y gestión de autenticación a través de refresh tokens.',
                     'Implementación de funcionalidades de gestión de archivos y multimedia (subida, previsualización, descarga de imágenes y vídeos)',
                     'Manejo de tareas en segundo plano y notificaciones in-app y push, mediante OneSignal.',
